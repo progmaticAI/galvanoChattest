@@ -6,4 +6,4 @@ streamlit==1.24.1
 pinecone-client==2.2.2
 unstructured==0.8.1
 pandas
-streamlit-chat
+streamlit_chat
