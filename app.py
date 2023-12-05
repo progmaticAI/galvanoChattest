@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit_message import message
+from streamlit_chat import message
 from langchain.chains import ConversationChain
 from langchain.chains.conversation.memory import (ConversationBufferMemory, 
                                                   ConversationSummaryMemory, 
@@ -49,7 +49,7 @@ if summarise_button:
 
 def getresponse(usr_input):
 
-    if st.session_state['conversation'] is None:
+    # if st.session_state['conversation'] is None:
 
      
     # Set OpenAI LLM and embeddings
@@ -76,7 +76,7 @@ def getresponse(usr_input):
         search = docsearch.similarity_search(usr_input)
         response = chain.run(input_documents=search, question=usr_input)
 
-    return response, search
+        return response, search
 
 
 
