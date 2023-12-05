@@ -8,7 +8,7 @@ from langchain.chains.conversation.memory import (ConversationBufferMemory,
                                                   )
 
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from config import OPENAI_API_KEY, PINECONE_API_KEY, PINECONE_API_ENVIRONMENT
 from constants import PINECONE_INDEX_NAME
 from langchain.chat_models import ChatOpenAI
