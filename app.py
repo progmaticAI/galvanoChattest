@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit_chat import message
+
 from langchain.chains import ConversationChain
 from langchain.chains.conversation.memory import (ConversationBufferMemory, 
                                                   ConversationSummaryMemory, 
@@ -17,7 +17,7 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.chains.question_answering import load_qa_chain
 import pinecone
 
-
+from streamlit_chat import message
 
 # Set API key for OpenAI and Pinecone
 os.environ["OPENAI_API_KEY"] = "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"
