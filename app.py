@@ -20,7 +20,7 @@ import pinecone
 from streamlit_chat import message
 
 # Set API key for OpenAI and Pinecone
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 pinecone.init(
     api_key="44350c8b-72f9-4e4a-b773-4b198e3a47cd",
     environment='gcp-starter'
